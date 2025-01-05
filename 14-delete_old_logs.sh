@@ -32,7 +32,7 @@ echo "Files to be deleted:: $FILES_TO_DELETE"
 
 while read -r filepath  # here file path is variable name u can give any name
 do
-    echo "Deleting file: $filepath  &>>$LOGS_FILE_NAME
+    echo "Deleting file: $filepath" &>>$LOGS_FILE_NAME
 
     rm -rf $filepath
     
