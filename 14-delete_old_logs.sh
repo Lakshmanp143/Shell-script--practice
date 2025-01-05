@@ -31,8 +31,8 @@ fi
 }
 sudo mkdir -p /var/log/shell_script-old-logs
 echo -e "script started executing at:: $TIMESTAMP" &>>$LOGS_FILE_NAME
-CHECH_ROOT
+
 
 FILES_TO_DELETE=$(find $SOURSE_DIR -name "*.log" -mtime +14)
-echo "Files to be deleted::$FILES_TO_DELETE"
+echo "Files to be deleted:: $FILES_TO_DELETE"
  
