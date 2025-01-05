@@ -38,4 +38,12 @@ do
     
     echo "Deleted file: $filepath"
 
+while read -r filepath   # here 'filepath' is variable name you can give any name
+do
+    echo "Deleting file: $filepath" &>>$LOGS_FILE_NAME
+
+    rm -rf $filepath
+    
+    echo "Deleted file: $filepath"
+
 done <<< $FILES_TO_DELETE  
