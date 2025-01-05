@@ -8,9 +8,9 @@ USERID=$(id -u)
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo "$2.... $R FAILURE $N"
+        echo -e "$2.... $R FAILURE $N"
     else
-        echo "$2.... $G SUCSESS $N"
+        echo -e "$2.... $G SUCSESS $N"
     fi
 }
 
@@ -18,7 +18,7 @@ VALIDATE(){
 CHECH_ROOT(){
 if [ $USERID -ne 0 ]
 then
-    echo " $B You need to be root user to execute tthis script $N"
+    echo -e " $B You need to be root user to execute tthis script $N"
     exit 1
 fi
 }
@@ -32,7 +32,7 @@ then
     dnf install mysql -y 
     VALIDATE $? "mysql installing"
 else
-    echo "mysql already $Y installed $N"
+    echo -e "mysql already $Y installed $N"
 fi
 
 dnf list installed git 
@@ -43,5 +43,5 @@ then
     dnf install git -y
     VALIDATE $? "git installing"
 else 
-    echo "git already $Y installed $N"
+    echoe -e "git already $Y installed $N"
 fi
