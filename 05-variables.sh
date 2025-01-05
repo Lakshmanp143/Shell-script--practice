@@ -4,7 +4,7 @@ NUM1=5
 NUM2=6
 SUM=$((NUM1+NUM2))
 DATE=$(date +%Y-%m-%d-%H-%M-%S)
-MOVIES=$( bahubali maghadeera darling )
+MOVIES=$( "bahubali" "maghadeera" "darling" )
 
 echo "script started executing at::$DATE"
 
