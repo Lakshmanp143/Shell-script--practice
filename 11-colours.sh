@@ -18,7 +18,7 @@ VALIDATE(){
 CHECH_ROOT(){
 if [ $USERID -ne 0 ]
 then
-    echo "$B You need to be root user to execute tthis script $N"
+    echo " $B You need to be root user to execute tthis script $N"
     exit 1
 fi
 }
