@@ -9,4 +9,5 @@ echo "Present working directory::$PWD"
 echo "Home directory og present user::$HOME"
 echo "Which user is running this script::$USER"
 echo "process id of present script::$$"
+sleep 10 &
 echo "Previous command process id::$!"
