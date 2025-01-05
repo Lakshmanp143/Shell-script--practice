@@ -23,11 +23,11 @@ else
 dnf list installed git 
 if [ $? -ne 0 ]
 then 
-    echo "git ont installed, istalling wait!!!"
-    dnf install got -y
+    echo "git not installed, istalling wait!!!"
+    dnf install git -y
     if [ $? -ne 0 ]
     then
-        echo "git instaklling failed"
+        echo "git installing failed"
     else
         echo "git installing success"
     fi
