@@ -6,11 +6,11 @@ then
     exit 1
 fi
 
-dnf list installed mysql
+dnf list installed mysql-server
 if [ $? -ne 0 ]
 then
     echo "Mysql not installed, Installing wait!!!!"
-    dnf install mysql -y 
+    dnf install mysql-server -y 
     if [ $? -ne 0 ]
     then 
         echo "mysql installing failed"
