@@ -36,6 +36,6 @@ do
 
     rm -rf $filepath
     
-    echo "Deleted file:: $filepath"
+    echo "Deleted file: $filepath"
 
 done <<< $FILES_TO_DELETE  
