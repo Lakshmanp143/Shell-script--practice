@@ -6,12 +6,25 @@ then
     exit 1
 fi
 
+dnf list installed mysql
+if [ $? -ne 0 ]
+then
+    echo "Mysql not installed, Installing wait!!!!"
+    dnf install mysql -y 
+    if [ $? -ne 0 ]
+    then 
+        echo "mysql installing failed"
+    else 
+        echo "mysql installing success"
+    fi
+else
+    echo "mysql already installed"
+fi
 
-
-dnf list installed | grep git 
+dnf list installed git 
 if [ $? -ne 0 ]
 then 
-    
+    echo "git not installed, istalling wait!!!"
     dnf install git -y
     if [ $? -ne 0 ]
     then
@@ -21,3 +34,4 @@ then
     fi
 else 
     echo "git already installed"
+fi
