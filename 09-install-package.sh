@@ -10,7 +10,7 @@ dnf list installed | grep mysql
 if [ $? -ne 0 ]
 then
     echo "Mysql not installed, Installing wait!!!!"
-    dnf install mysql-server -y 
+    dnf install mysql -y 
     if [ $? -ne 0 ]
     then 
         echo "mysql installing failed"
