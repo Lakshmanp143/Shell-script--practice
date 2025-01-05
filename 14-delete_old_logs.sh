@@ -23,7 +23,7 @@ VALIDATE(){
 
 
 sudo mkdir -p /var/log/shell_script-old-logs1
-sudo chown -R ec2-user:ec2-user shell_script-old-logs1
+sudo chown -R ec2-user:ec2-user /var/log/shell_script-old-logs1
 echo -e "script started executing at:: $TIMESTAMP" &>>$LOGS_FILE_NAME
 
 
