@@ -39,7 +39,7 @@ do
     then
         echo -e "$package not installed, $B installing wait!!! $N"
         dnf install $package -y  &>>$LOGS_FILE_NAME
-        VALIDATE $? "$package installing success"
+        VALIDATE $? "$package installing"
     else
         echo -e "$package already $Y ......installed $N"
     fi
