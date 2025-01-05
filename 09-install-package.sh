@@ -20,7 +20,7 @@ then
 else
     echo "mysql already installed"
 
-dnf list installed git 
+dnf list installed | grep git 
 if [ $? -ne 0 ]
 then 
     echo "git not installed, istalling wait!!!"
