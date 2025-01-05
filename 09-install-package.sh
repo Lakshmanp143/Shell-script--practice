@@ -6,7 +6,7 @@ then
     exit 1
 fi
 
-dnf list installed | grep mysql-server
+dnf list installed | grep mysql
 if [ $? -ne 0 ]
 then
     echo "Mysql not installed, Installing wait!!!!"
