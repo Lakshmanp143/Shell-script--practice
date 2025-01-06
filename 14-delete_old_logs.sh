@@ -11,15 +11,7 @@ LOGS_FOLDER="/var/log/shell_script-old-logs1"
 LOGS_FILE=$(echo $0 | cut -d "." -f1)
 LOGS_FILE_NAME="$LOGS_FOLDER/$LOGS_FILE-$TIMESTAMP.log"
 
-USERID=$(id -u)
-VALIDATE(){
-    if [ $1 -ne 0 ]
-    then
-        echo -e "$2.... $R FAILURE $N"
-    else
-        echo -e "$2.... $G SUCSESS $N"
-    fi
-}
+
 
 
 sudo mkdir -p /var/log/shell_script-old-logs1
