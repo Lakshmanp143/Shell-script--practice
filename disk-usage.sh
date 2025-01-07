@@ -8,5 +8,5 @@ do
     USAGE=$(echo $line | awk -F " " '{print $6F}' | cut -d "%" -f1)
     PARTITION=$(echo $line | awk -F " " '{print $NF}')
     echo "partition: $PARTITION , usage: $USAGE"
-    if [ ]
+    #if [ ]
 done <<< $DISK_USAGE
