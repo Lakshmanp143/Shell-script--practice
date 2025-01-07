@@ -14,7 +14,7 @@ LOGS_FILE=$(echo $0 | awk -F "/" '{print $NF}' | cut -d "." -f1 )
 LOGS_FILE_NAME="$LOGS_FOLDER/$LOGS_FILE-$TIMESTAMP.log"
 
 USAGE(){
-    echo -e "$R USAGE:: $N sh 15-backup.sh <SOURCE_DIR> <DESTIN_DIR> <DAYS(optional)>"
+    echo -e "$R USAGE:: $N backup <SOURCE_DIR> <DESTIN_DIR> <DAYS(optional)>"
     exit 1
 }
 
